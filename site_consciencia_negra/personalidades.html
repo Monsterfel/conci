@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Consciência Negra — Personalidades</title>
+<meta name="description" content="Página com mini-biografias de personalidades negras nas artes, ciência, política e esporte.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Ir para o conteúdo principal</a>
+<header class="container" role="banner">
+  <div class="header-inner">
+    <div class="brand">Consciência Negra</div>
+    <nav role="navigation" aria-label="Menu principal">
+      <a href="index.html">História</a>
+      <a href="personalidades.html" aria-current="page">Personalidades</a>
+      <a href="desafios.html">Desafios & Ações</a>
+      <button id="themeToggle" aria-pressed="false" title="Alternar tema">Tema</button>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="container" tabindex="-1" role="main">
+  <section aria-labelledby="pers-title" class="hero">
+    <h1 id="pers-title">Personalidades e contribuições</h1>
+    <p>Breves perfis que mostram a diversidade de áreas em que pessoas negras se destacaram.</p>
+  </section>
+
+  <section aria-labelledby="filter-title" class="container">
+    <h2 id="filter-title">Filtro / busca</h2>
+    <div class="filter-controls">
+      <input id="filterInput" type="search" placeholder="Filtrar por nome ou área" aria-label="Filtrar personalidades">
+      <button class="btn" onclick="document.getElementById('filterInput').value='';document.getElementById('filterInput').dispatchEvent(new Event('input'))">Limpar</button>
+    </div>
+
+    <div class="person-list" aria-live="polite">
+      <article class="person-item" tabindex="0">
+        <img src="assets/images/pers1.svg" alt="Ilustração representando artista" loading="lazy">
+        <h3>Personalidade: Arte</h3>
+        <p>Artistas negras e negros que influenciaram a cultura, da música às artes plásticas.</p>
+      </article>
+      <article class="person-item" tabindex="0">
+        <img src="assets/images/pers2.svg" alt="Ilustração representando ciência" loading="lazy">
+        <h3>Personalidade: Ciência</h3>
+        <p>Cientistas e pesquisadores que contribuíram para conhecimento e tecnologia.</p>
+      </article>
+      <article class="person-item" tabindex="0">
+        <img src="assets/images/pers3.svg" alt="Ilustração representando esporte" loading="lazy">
+        <h3>Personalidade: Esporte</h3>
+        <p>Atletas que marcaram história e ampliaram representatividade.</p>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="sec-more" class="container">
+    <h2 id="sec-more">Mini-biografias (exemplos)</h2>
+    <div class="cards">
+      <article class="card" tabindex="0">
+        <h3>Ana de exemplo</h3>
+        <p>Resumo curto sobre conquistas em artes visuais e impacto cultural.</p>
+      </article>
+      <article class="card" tabindex="0">
+        <h3>João de exemplo</h3>
+        <p>Resumo curto sobre carreira na ciência e suas descobertas.</p>
+      </article>
+      <article class="card" tabindex="0">
+        <h3>Maria de exemplo</h3>
+        <p>Resumo curto sobre conquistas no esporte e prêmios.</p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer role="contentinfo" class="container">
+  <p>Créditos e sugestões de leitura: artigos, biografias e acervos digitais. Imagens SVG próprias (livres).</p>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
